@@ -51,7 +51,11 @@ is obtained, the control law is calculated by the receding horizon technique as 
 control law implemented in the real plant will be $U(k) =\kappa_N (X(j) − X_O, R − Y_0) + U_0$.
 
 ## Lifted System Dynamics
-
+the notation of a lifted system dynamics
+$$
+\mathbf{x}=G_x x_k + G_u \mathbf{u}
+$$
+## Quadratic Program
 
 The implementation with the MATLAB built-in functions quadprog is shown here.
 
