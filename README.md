@@ -53,11 +53,11 @@ control law implemented in the real plant will be $U(k) =\kappa_N (X(k) − X_O,
 
 
 
-The implementation with the MATLAB built-in functions quadprog} is shown here.
+The implementation with the MATLAB built-in functions quadprog is shown here.
 
 $$
 \begin{align}
-    \underset{\mathbf{u}}{\min}V_{N}(x,y_{r};\mathbf{u}) = \mathbf{u}(G_u\cdotQ\cdotG_u \\
+    \underset{\mathbf{u}}{\min}V_{N}(x,y_{r};\mathbf{u}) = \mathbf{u}(G_u \cdot Q \cdot G_u \\
 \end{align}
 $$
     
