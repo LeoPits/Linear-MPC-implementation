@@ -113,12 +113,15 @@ $$
 \end{align}
 $$
 
-## Results
-(result_tracking.pdf)
 
+$$ 
 \begin{align}
     \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) &= \mathbf{u}^T H \mathbf{u} + 2(F_1-F_2)\mathbf{u}\\
     s.t.& \quad \mathbf{x}=G_xx(j)+G_u\mathbf{u},\\
   &\quad \widetilde{G}\mathbf{u} \leq \widetilde{g} 
 \end{align}
 $$    
+
+
+## Results
+[Results](result_tracking.pdf)
