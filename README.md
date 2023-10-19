@@ -12,7 +12,7 @@ $$
 
 $$
 \begin{align}
-    V_(x,y) 
+    V_(x,y_{sp}) 
 \end{align}
 $$
 
