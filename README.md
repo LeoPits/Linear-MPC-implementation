@@ -57,7 +57,7 @@ The implementation with the MATLAB built-in functions quadprog} is shown here.
 
 $$
 \begin{align}
-    \underset{\mathbf{u},x_{s},u_{s}}{\min}V_{N}(x,y_{r};\mathbf{u},x_{s},y_{s}) \\
+    \underset{\mathbf{u}}{\min}V_{N}(x,y_{r};\mathbf{u}) = \mathbf{u}(G_u\cdotQ\cdotG_u \\
 \end{align}
 $$
     
