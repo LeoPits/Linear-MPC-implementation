@@ -23,11 +23,16 @@ and $y(k) = Y (k) − Y_0$.
 
 
 
+
+
 The objective is to implement an MPC control law $U(k) =
 \kappa(X(k), R)$ such that the controlled system is asymptotically
 stable and the controlled variables $Y (k)$ converge to the
 reference $R$ if this is reachable.
-
+For a given state of the prediction model $x = X−X_0$ and a
+reference $r = R −Y_0$, the MPC control law is derived from
+the online solution of the following optimization control
+problem:
 
 $$
 \begin{align}
