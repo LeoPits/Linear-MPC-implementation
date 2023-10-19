@@ -105,7 +105,7 @@ $$
 
 $$
 \begin{align}
-    \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) = \mathbf{u}^T(G_u  Q  G_u + R )\mathbf{u} + 2(  x_{ 0}^{T}  G_{x}^{T}  Q  G_u)\mathbf{u}-2( x_{ R}^{T}  Q  G_u - u_{R}^{T}  R )\mathbf{u}\\
+    \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) = \mathbf{u}^T(G_u  Q  G_u + R )\mathbf{u} + 2(  x(j)^{T}  G_{x}^{T}  Q  G_u)\mathbf{u}-2( x_{ R}^{T}  Q  G_u - u_{R}^{T}  R )\mathbf{u}\\
 \end{align}
 $$
 
