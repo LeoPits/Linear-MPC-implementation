@@ -12,7 +12,7 @@ $$
 
 
 where   his the current state of the system, $u  \in 	 R^m $
-is the current input, $y 	\in 	 R^p$ is the controlled output and $ x^+ $
+is the current input, $y 	\in 	 R^p$ is the controlled output and $ x $
 the successor state.
 
 
