@@ -11,7 +11,7 @@ $$
 define MPC optimization problem
 $$
 \begin{align}
-    V_(x,y_{t}) = \sum_{j=0}^{N-1}
+    V_(x,y_{t}) 
 \end{align}
 $$
 
