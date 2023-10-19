@@ -15,6 +15,14 @@ is the current input, $y 	\in 	 R^p$ is the controlled output and  $x^+$
 the successor state.
 
 
+This linear model is derived from the linearization of the model at an operation equilibrium
+point given by the triplet $(X_0, U_0, Y_0)$. Therefore, denoting
+as $(X(k), U(k), Y (k))$ the state, inputs and outputs of the
+plant, we have that $x(k) = X(k) − X_0$, $u(k) = U(k) − U_0$
+and $y(k) = Y (k) − Y_0$.
+
+
+
 The objective is to implement an MPC control law $U(k) =
 \kappa(X(k), R)$ such that the controlled system is asymptotically
 stable and the controlled variables $Y (k)$ converge to the
