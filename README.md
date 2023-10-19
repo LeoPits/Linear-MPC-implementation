@@ -66,10 +66,28 @@ x_{1}\\
 \vdots\\
 x_{N}
 \end{array}\right],u=\left[\begin{array}{c}
-x_{0}\\
+u_{0}\\
 u_{1}\\
 \vdots\\
 u_{N-1}
+\end{array}\right]
+$$
+
+The lifted system matrix and the lifted input matrix are
+
+$$
+G_{x}=\left[\begin{array}{c}
+I\\
+A\\
+A^{2}\\
+\vdots\\
+A^{N}
+\end{array}\right],G_{u}=\left[\begin{array}{cccc}
+0 & 0 & \cdots & 0\\
+B & 0 & \cdots & 0\\
+AB & B & \cdots & 0\\
+\vdots & \vdots & \vdots & \vdots\\
+A^{N-1}B & A^{N-2}B & \cdots & B
 \end{array}\right]
 $$
 
