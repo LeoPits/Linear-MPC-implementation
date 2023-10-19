@@ -97,7 +97,7 @@ The implementation with the MATLAB built-in functions quadprog is shown here.
 
 $$
 \begin{align}
-    \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) = \mathbf{u}^TR\mathbf{u}\\
+    \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) = x^TQX+  \mathbf{u}^TR\mathbf{u}\\
 \end{align}
 $$
 
