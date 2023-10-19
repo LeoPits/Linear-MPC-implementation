@@ -1,5 +1,6 @@
 # MPC-water-tank-implemention
-A linear quadratic model predictive controller (MPC) to control a model of a quadruple-tank process simulated in Matlab/Simulink.
+
+This tutorial shows an implementation of  a linear quadratic model predictive controller (MPC) to control a quadruple-tank model,  simulated in Matlab/Simulink.
 Consider that the plant to control is modeled as a linear time-invariant system given by
 
 
