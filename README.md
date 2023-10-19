@@ -57,8 +57,7 @@ The implementation with the MATLAB built-in functions quadprog} is shown here.
 
 $$
 \begin{align}
-    arg min V_{\text{N}}(x,y_{sp};\mathbf{u}) \\
+    \underset{\mathbf{u},x_{s},u_{s}}{\min}V_{N}(x,y_{r};\mathbf{u},x_{s},y_{s}) \\
 \end{align}
-
 $$
     
