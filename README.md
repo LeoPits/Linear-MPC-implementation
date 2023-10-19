@@ -57,7 +57,7 @@ The implementation with the MATLAB built-in functions quadprog is shown here.
 
 $$
 \begin{align}
-    \underset{\mathbf{u}}{\min}V_{N}(x,y_{r};\mathbf{u}) = \mathbf{u}^T(G_u \cdot Q \cdot G_u + R )\mathbf{u} + (2 \cdot x_{ k}^{T} \cdot G_{x}^{T} \cdot Q \cdot G_u)\\
+    \underset{\mathbf{u}}{\min}V_{N}(x,y_{r};\mathbf{u}) = \mathbf{u}^T(G_u \cdot Q \cdot G_u + R )\mathbf{u} + 2( \cdot x_{ k}^{T} \cdot G_{x}^{T} \cdot Q \cdot G_u)-2(\cdot X_{ R}^{T} \cdot Q \cdot G_u - U_{R}^{T} \cdot R )\\
 \end{align}
 $$
     
