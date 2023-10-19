@@ -53,10 +53,12 @@ control law implemented in the real plant will be $U(k) =\kappa_N (X(k) − X_O,
 
 
 
-Then the optimization problem can be casted by the following multi-parametric quadratic optimization problem
+The implementation with the MATLAB built-in functions \textit{quadprog} or  are shown here.
 
 $$
 \begin{align}
-    V_{\text{N}}(x,y_{sp};\mathbf{u})&= \sum_{j=0}^{N-1}\parallel x(j)-x_r\parallel_{Q}^{2}  + \parallel u(j)-u_r\parallel_{R}^{2}  + \parallel x(N)-x_{r}\parallel_{P}^{2} \\
+    arg min V_{\text{N}}(x,y_{sp};\mathbf{u}) \\
+\end{align}
+
 $$
     
