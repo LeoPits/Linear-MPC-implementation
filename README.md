@@ -54,10 +54,10 @@ control law implemented in the real plant will be $U(k) =\kappa_N (X(j) − X_O,
 the notation of a lifted system dynamics
 
 $$
-\mathbf{x}=G_x x_0 + G_u \mathbf{u}
+\mathbf{x}=G_x x(j) + G_u \mathbf{u}
 $$
 
-is used, where the whole state sequence can be determined with the aid of the input sequence $\mathbf{u}$ for a given initial state $x_0$. The state sequence and the input sequence are 
+is used, where the whole state sequence can be determined with the aid of the input sequence $\mathbf{u}$ for a given initial state $x(j)$. The state sequence and the input sequence are 
 
 $$
 \mathbf{x}=\left[\begin{array}{c}
@@ -97,7 +97,7 @@ The implementation with the MATLAB built-in functions quadprog is shown here.
 
 $$
 \begin{align}
-    \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) = x^TQx+  \mathbf{u}^TR\mathbf{u}\\
+    \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) = x(j)^TQx(j)+  \mathbf{u}^TR\mathbf{u}\\
 \end{align}
 $$
 
