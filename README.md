@@ -124,4 +124,4 @@ $$
 
 
 ## Results
-[Results](result_tracking.pdf)
+[Results](/img/result_tracking.pdf)
