@@ -53,7 +53,7 @@ control law implemented in the real plant will be $U(k) =\kappa_N (X(k) − X_O,
 
 
 
-The implementation with the MATLAB built-in functions \textit{quadprog} or  are shown here.
+The implementation with the MATLAB built-in functions quadprog} is shown here.
 
 $$
 \begin{align}
