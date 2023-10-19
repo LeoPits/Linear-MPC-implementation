@@ -57,10 +57,21 @@ $$
 \mathbf{x}=G_x x_0 + G_u \mathbf{u}
 $$
 
-is used, where the whole state sequence can be determined with the aid of the input sequence $\mathbf{u}$ for a given initial state $x_0$. The state sequence is sequence:
+is used, where the whole state sequence can be determined with the aid of the input sequence $\mathbf{u}$ for a given initial state $x_0$. The state sequence and the input sequence are 
 
-and the input sequence
-
+$$
+\mathbf{x}=\left[\begin{array}{c}
+x_{0}\\
+x_{1}\\
+\vdots\\
+x_{N}
+\end{array}\right],u=\left[\begin{array}{c}
+x_{0}\\
+u_{1}\\
+\vdots\\
+u_{N-1}
+\end{array}\right]
+$$
 
 ## Quadratic Program
 
