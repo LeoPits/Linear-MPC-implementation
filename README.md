@@ -11,9 +11,11 @@ $$
 $$
 
 
-where $x 	\in  R^n $ his the current state of the system, $u  \in 	 R^m $
+where       $x 	\in  R^n $ his the current state of the system, $u  \in 	 R^m $
 is the current input, $y 	\in 	 R^p$ is the controlled output and $ x^+ $
 the successor state.
+
+
 The objective is to implement an MPC control law $U(k) =
 \kappa(X(k), R)$ such that the controlled system is asymptotically
 stable and the controlled variables $Y (k)$ converge to the
