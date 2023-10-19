@@ -124,4 +124,4 @@ $$
 
 
 ## Results
-[Results](/img/result_tracking.pdf)
+![Alt text]([image link](https://github.com/LeoPits/Linear-MPC-implementation/blob/main/img/result_tracking.pdf)https://github.com/LeoPits/Linear-MPC-implementation/blob/main/img/result_tracking.pdf)
