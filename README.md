@@ -8,8 +8,7 @@ $$
 \end{align}
 $$
 
-
-
+define optimization problem 
 $$
 \begin{align}
     V_(x,y_{sp}) 
