@@ -8,8 +8,10 @@ $$
 \end{align}
 $$
 
-define optimization problem 
-
+The objective is to implement an MPC control law $$U(k) =
+\kappa(X(k), R)$$ such that the controlled system is asymptotically
+stable and the controlled variables $$Y (k)$$ converge to the
+reference $R$ if this is reachable.
 
 
 $$
