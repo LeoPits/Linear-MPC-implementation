@@ -1,13 +1,15 @@
 # MPC-water-tank-implemention
 A linear quadratic model predictive controller (MPC) to control a model of a quadruple-tank process simulated in Matlab/Simulink.
-
+Consider that the plant to control is modeled as a linear time-invariant system given by
 $$
 \begin{align}
     x^+&=Ax+Bu   \\  
     y&=Cx+Du 
 \end{align}
 $$
-
+where $x 	\in  R^n $ his the current state of the system, $u  \in 	 R^m $
+is the current input, $y 	\in 	 R^p$ is the controlled output and $ x^+ $
+the successor state.
 The objective is to implement an MPC control law $U(k) =
 \kappa(X(k), R)$ such that the controlled system is asymptotically
 stable and the controlled variables $Y (k)$ converge to the
