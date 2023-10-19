@@ -17,17 +17,17 @@ the successor state.
 
 This linear model is derived from the linearization of the model at an operation equilibrium
 point given by the triplet $(X_0, U_0, Y_0)$. Therefore, denoting
-as $(X(k), U(k), Y (k))$ the state, inputs and outputs of the
-plant, we have that $x(k) = X(k) − X_0$, $u(k) = U(k) − U_0$
-and $y(k) = Y (k) − Y_0$.
+as $(X(j), U(j), Y (j))$ the state, inputs and outputs of the
+plant, we have that $x(j) = X(j) − X_0$, $u(j) = U(j) − U_0$
+and $y(j) = Y (j) − Y_0$.
 
 
 
 
 
-The objective is to implement an MPC control law $U(k) =
-\kappa(X(k), R)$ such that the controlled system is asymptotically
-stable and the controlled variables $Y (k)$ converge to the
+The objective is to implement an MPC control law $U(j) =
+\kappa(X(j), R)$ such that the controlled system is asymptotically
+stable and the controlled variables $Y (j)$ converge to the
 reference $R$ if this is reachable.
 For a given state of the prediction model $x = X−X_0$ and a
 reference $r = R −Y_0$, the MPC control law is derived from
@@ -48,7 +48,7 @@ $$
 
 where $M$ is a suitable matrix that maps the steady state and input given by the reference. Once a solution $u^∗(x, r)$
 is obtained, the control law is calculated by the receding horizon technique as follows $\kappa_N (x, r) = u∗(0; x, r)$. The
-control law implemented in the real plant will be $U(k) =\kappa_N (X(k) − X_O, R − Y_0) + U_0$.
+control law implemented in the real plant will be $U(k) =\kappa_N (X(j) − X_O, R − Y_0) + U_0$.
 
 
 
@@ -57,7 +57,7 @@ The implementation with the MATLAB built-in functions quadprog is shown here.
 
 $$
 \begin{align}
-    \underset{\mathbf{u}}{\min}V_{N}(x,y_{r};\mathbf{u}) = \mathbf{u}^T(G_u \cdot Q \cdot G_u + R )\mathbf{u} + 2( \cdot x_{ k}^{T} \cdot G_{x}^{T} \cdot Q \cdot G_u)-2(\cdot X_{ R}^{T} \cdot Q \cdot G_u - U_{R}^{T} \cdot R )\\
+    \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) = \mathbf{u}^T(G_u \cdot Q \cdot G_u + R )\mathbf{u} + 2( \cdot x_{ k}^{T} \cdot G_{x}^{T} \cdot Q \cdot G_u)-2(\cdot x_{ R}^{T} \cdot Q \cdot G_u - u_{R}^{T} \cdot R )\\
 \end{align}
 $$
     
