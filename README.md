@@ -49,3 +49,9 @@ $$
 where $M$ is a suitable matrix that maps the steady state and input given by the reference. Once a solution $u^∗(x, r)$
 is obtained, the control law is calculated by the receding horizon technique as follows $\kappa_N (x, r) = u∗(0; x, r)$. The
 control law implemented in the real plant will be $U(k) =\kappa_N (X(k) − X_O, R − Y_0) + U_0$.
+
+
+
+
+Then the optimization problem can be casted by the
+following multi-parametric quadratic optimization problem
