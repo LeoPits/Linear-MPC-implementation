@@ -1,4 +1,4 @@
-function Gu = calcolaGu(A,B,N)
+function Gu = Compute_Gu(A,B,N)
    zeri = zeros(size(B));
    Gu = [zeros(size(B)); B];
 
