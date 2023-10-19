@@ -11,7 +11,7 @@ $$
 define MPC optimization problem
 $$
 \begin{align}
-    V_(x,y_{t}) 
+    V_(x,y) 
 \end{align}
 $$
 
