@@ -99,7 +99,7 @@ $$
 \begin{align}
     \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) &= (\mathbf{x}-\mathbf{x_r})^TQ(\mathbf{x}-\mathbf{x_r})+  (\mathbf{u}-\mathbf{u}_r)^TR(\mathbf{u}-\mathbf{u}_r)\\
 s.t.& \quad \mathbf{x}=G_xx(j)+G_u\mathbf{u},\\
-  \quad \widetilde{G}\mathbf{u} \leq \widetilde{g} 
+  &\quad \widetilde{G}\mathbf{u} \leq \widetilde{g} 
 \end{align}
 $$
 
@@ -108,6 +108,8 @@ $$
 $$
 \begin{align}
     \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) = \mathbf{u}^T(G_u  Q  G_u + R )\mathbf{u} + 2(  x(j)^{T}  G_{x}^{T}  Q  G_u)\mathbf{u}-2( x_{ R}^{T}  Q  G_u - \mathbf{u_{r}}^{T}  R )\mathbf{u}\\
+    s.t.& \quad \mathbf{x}=G_xx(j)+G_u\mathbf{u},\\
+  &\quad \widetilde{G}\mathbf{u} \leq \widetilde{g} 
 \end{align}
 $$
 
@@ -115,5 +117,7 @@ $$
 $$
 \begin{align}
     \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) = \mathbf{u}^T H \mathbf{u} + 2(F_1-F_2)\mathbf{u}\\
+    s.t.& \quad \mathbf{x}=G_xx(j)+G_u\mathbf{u},\\
+  &\quad \widetilde{G}\mathbf{u} \leq \widetilde{g} 
 \end{align}
 $$    
