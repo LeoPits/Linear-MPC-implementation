@@ -50,7 +50,7 @@ where $M$ is a suitable matrix that maps the steady state and input given by the
 is obtained, the control law is calculated by the receding horizon technique as follows $\kappa_N (x, r) = u∗(0; x, r)$. The
 control law implemented in the real plant will be $U(k) =\kappa_N (X(j) − X_O, R − Y_0) + U_0$.
 
-
+## Lifted System Dynamics
 
 
 The implementation with the MATLAB built-in functions quadprog is shown here.
@@ -64,6 +64,6 @@ $$
 
 $$
 \begin{align}
-    \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) = \mathbf{u}^T H \mathbf{u} + 2F1\mathbf{u}-2F2\mathbf{u}\\
+    \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) = \mathbf{u}^T H \mathbf{u} + 2F_1\mathbf{u}-2F_2\mathbf{u}\\
 \end{align}
 $$    
