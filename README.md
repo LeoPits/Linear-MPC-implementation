@@ -97,7 +97,9 @@ The implementation with the MATLAB built-in functions quadprog is shown here.
 
 $$
 \begin{align}
-    \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) = (\mathbf{x}-\mathbf{x_r})^TQ(\mathbf{x}-\mathbf{x_r})+  (\mathbf{u}-\mathbf{u}_r)^TR(\mathbf{u}-\mathbf{u}_r)\\
+    \underset{\mathbf{u}}{\min}V_{N}(x,x_{r};\mathbf{u}) &= (\mathbf{x}-\mathbf{x_r})^TQ(\mathbf{x}-\mathbf{x_r})+  (\mathbf{u}-\mathbf{u}_r)^TR(\mathbf{u}-\mathbf{u}_r)\\
+s.t.& \quad \mathbf{x}=G_xx(j)+G_u\mathbf{u},\\
+  \quad \widetilde{G}\mathbf{u} \leq \widetilde{g} 
 \end{align}
 $$
 
