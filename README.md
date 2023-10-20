@@ -17,21 +17,21 @@ the successor state.
 
 
 This linear model is derived from the linearization of the model at an operation equilibrium
-point given by the triplet $(X_0, U_0, Y_0)$. Therefore, denoting
-as $(X(j), U(j), Y (j))$ the state, inputs and outputs of the
-plant, we have that $x(j) = X(j) − X_0$, $u(j) = U(j) − U_0$
-and $y(j) = Y (j) − Y_0$.
+point given by the triplet $(x_0, u_0, y_0)$. Therefore, denoting
+as $(x(j), u(j), y (j))$ the state, inputs and outputs of the
+plant, we have that $x(j) = x(j) − x_0$, $u(j) = u(j) − u_0$
+and $y(j) = y (j) − y_0$.
 
 
 
 
 
 The objective is to implement an MPC control law $U(j) =
-\kappa(X(j), R)$ such that the controlled system is asymptotically
-stable and the controlled variables $Y (j)$ converge to the
+\kappa(x(j), R)$ such that the controlled system is asymptotically
+stable and the controlled variables $y (j)$ converge to the
 reference $R$ if this is reachable.
-For a given state of the prediction model $x = X−X_0$ and a
-reference $r = R −Y_0$, the MPC control law is derived from
+For a given state of the prediction model $x = x−x_0$ and a
+reference $r = R −y_0$, the MPC control law is derived from
 the online solution of the following optimization control
 problem:
 
@@ -47,9 +47,9 @@ $$
 $$
 
 
-where $M$ is a suitable matrix that maps the steady state and input given by the reference. Once a solution $u^∗(x, r)$
-is obtained, the control law is calculated by the receding horizon technique as follows $\kappa_N (x, r) = u∗(0; x, r)$. The
-control law implemented in the real plant will be $U(k) =\kappa_N (X(j) − X_O, R − Y_0) + U_0$.
+where $M$ is a suitable matrix that maps the steady state and input given by the reference. Once a solution $u^{∗}(x, r)$
+is obtained, the control law is calculated by the receding horizon technique as follows $\kappa_N (x, r) = u^{*} (0; x, r)$. The
+control law implemented in the real plant will be $U(k) =\kappa_N (x(j) − X_O, R − Y_0) + U_0$.
 
 ## Lifted System Dynamics
 the notation of a lifted system dynamics
