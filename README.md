@@ -49,7 +49,7 @@ $$
 
 where $M$ is a suitable matrix that maps the steady state and input given by the reference. Once a solution $u^{∗}(x, r)$
 is obtained, the control law is calculated by the receding horizon technique as follows $\kappa_N (x, r) = u^{*} (0; x, r)$. The
-control law implemented in the real plant will be $U(k) =\kappa_N (x(j) − X_O, R − Y_0) + U_0$.
+control law implemented in the real plant will be $u(k) =\kappa_N (x(j) − x_O, R − y_0) + u_0$.
 
 ## Lifted System Dynamics
 the notation of a lifted system dynamics
